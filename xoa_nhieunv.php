@@ -267,7 +267,7 @@ if (isset($_POST['delete'])) {
     </form>
 
     <footer class="footer">
-        <h4>SVTH: Nguyễn Đăng Khoa - Khoa Công Nghệ Thông Tin</h4>
+        <h4>SVTH: Lê Thị Kim Ngân - Khoa Công Nghệ Thông Tin</h4>
         <h4>Trường: Cao Đẳng Nghề Đồng Nai - Số 8, Nguyễn Văn Hoa, Thống Nhất, Thiên Hòa</h4>
     </footer>
 </body>
