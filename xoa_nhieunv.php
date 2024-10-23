@@ -40,7 +40,7 @@ if (isset($_POST['delete'])) {
     
     $sql = "SELECT * FROM nhanvien";
     $result = $conn->query($sql);
-/*}*/
+}
 ?>
 
 <!DOCTYPE html>
@@ -219,7 +219,8 @@ if (isset($_POST['delete'])) {
     if (isset($_GET['message'])) {
         echo "<div class='alert'>" . htmlspecialchars($_GET['message']) . "</div>";
     }
-    ?>
+    
+    $conn->close(); ?>
 
     <form method="POST" action="">
         <table>
@@ -272,7 +273,3 @@ if (isset($_POST['delete'])) {
 </body>
 
 </html>
-
-<?php
-$conn->close();
-?>
