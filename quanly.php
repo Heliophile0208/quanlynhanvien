@@ -1,11 +1,5 @@
 <?php
-session_start();
 
-if (!isset($_SESSION['username'])) {
-    header("Location: dangnhap.php");
-    exit();
-}
-else
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
@@ -161,7 +155,8 @@ $result_nhanvien = $conn->query($sql_nhanvien);
     <div class="nhanvien_content">
         <p><a href="them.php">1. Thêm nhân viên mới</a></p>
         <p><a href="SuaNV/sua.php">2. Chỉnh sửa hồ sơ nhân viên</a></p>
-        <p><a href="xoa.php">3. Xóa hồ sơ nhân viên</a></p>
+        <p><a href="xoa.php">3.1 Xóa hồ sơ nhân viên</a></p>
+        <p><a href="xoa_nhieunv.php">3.2 Xóa nhiều nhân viên</a></p>
         <p><a href="dangnhap.php">4. Thoát</a></p>
 
     </div>
